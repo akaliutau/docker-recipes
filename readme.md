@@ -24,7 +24,7 @@ docker build -t linux-java:1.0 .
 docker run linux-java:1.0
 ```
 
-The first two commands are related to Dockerfile1 (container description) file
+Next two commands are related to Dockerfile1 (container description) file
 
 3) Builds image with tag linux-java:1.0. Note the dot at the end of the command.
 ```
