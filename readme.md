@@ -36,3 +36,6 @@ docker -d Dockerfile1 build -t linux-java:2.0 .
 docker run -it linux-java:2.0 /bin/bash
 ```
 
+/multistage - contains multi step process pipelines with data transfer between steps
+
+/server - an example of dockerized server
