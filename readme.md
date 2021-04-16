@@ -36,6 +36,23 @@ docker -d Dockerfile1 build -t linux-java:2.0 .
 docker run -it linux-java:2.0 /bin/bash
 ```
 
+/build - contains recipe to compose already existing image with the new one (to be build from Dockerfile)
+
+This example shows how to build two containers from Redis image and RubbitMQ image with runtime customization.
+
+
 /multistage - contains multi step process pipelines with data transfer between steps
+
+/pyserver - contains simple socket server written in Python 3.x
+
+```
+docker build -t pyserver:1.0 .
+```
+
+run server:
+
+```
+docker run pyserver:1.0
+```
 
 /server - an example of dockerized server
