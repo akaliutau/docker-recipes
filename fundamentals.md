@@ -16,7 +16,7 @@ docker history mongo:latest
 # Building the image
 
 ```shell
-docker build -t flask-app -f ./Dockerfile.flask_app.0 .
+docker build -t flask-app -f ./Dockerfile.flask_app.df .
 docker run -d -p 5000:5000 flask-app
 ```
 

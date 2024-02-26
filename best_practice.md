@@ -12,4 +12,20 @@ RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 USER uwsgi
 ```
 
+# Organizing metadata with labels
+Docker Inc. recommends recording metadata with labels to help organize images, networks, containers, and other objects. 
+Each label key should be prefixed with the reverse DNS notation of a domain that is controlled or collaborating with the author,
+such as `com.<your company>.some-label.` 
+Labels are flexible, extensible, and lightweight, but the lack of structure makes leveraging the information difficult.
+
+Example:
+
+```shell
+version=0.6
+docker image build -t mailer:${version} \
+  -f Dockerfile.mailer.df \
+  --build-arg VERSION=${version} .
+  
+docker image inspect --format '{{ json .Config.Labels }}' mailer:0.6
+```
 
