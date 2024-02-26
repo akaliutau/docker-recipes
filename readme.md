@@ -5,7 +5,6 @@ About
 This is a collection of recipes demonstrating different use-cases involving docker.
   
 
-
 Overview
 ==========
 
@@ -56,3 +55,16 @@ docker run pyserver:1.0
 ```
 
 /server - an example of dockerized server
+
+Index
+======
+
+* [Best practice in writing a Dockerfile](https://docs.docker.com/articles/dockerfile_best-practices/)
+
+* [Fundamentals](./fundamentals.md)
+
+* [Common Commands](./commands.md)
+
+* [Best practice](./best_practice.md)
+
+
